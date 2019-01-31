@@ -4,7 +4,6 @@ import InputField from './InputField';
 import rootReducer from './reducers';
 import Context from './context';
 import * as ActionCreators from './actionCreators';
-import './App.css';
 
 function handleChange(dispatch) {
   return e => {
