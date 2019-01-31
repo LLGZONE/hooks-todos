@@ -14,9 +14,9 @@ function handleChange(dispatch) {
 }
 
 function App() {
-  const [state, dispatch] = useReducer(rootReducer, {
-    todos: [],
-    history: []
+  // see https://github.com/facebook/react/issues/14542
+  const [state, dispatch] = useReducer(rootReducer, undefined, {
+    type: 'INIT'
   });
   const onChange = useMemo(
     () => {
