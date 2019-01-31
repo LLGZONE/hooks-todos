@@ -9,4 +9,4 @@ function InputField({ onChange }) {
   );
 }
 
-export default InputField;
+export default React.memo(InputField);
