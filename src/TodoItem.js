@@ -27,4 +27,4 @@ function TodoItem({ message, isFinish, id }) {
   );
 }
 
-export default TodoItem;
+export default React.memo(TodoItem);
